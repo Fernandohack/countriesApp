@@ -1,0 +1,10 @@
+<form (ngSubmit)="search()">
+  <input
+    class="form-control"
+    name="term"
+    type="text"
+    [(ngModel)]="term"
+    (input)="pressKey($event)"
+    autocomplete="false"
+    [placeholder]="placeholder">
+</form>
