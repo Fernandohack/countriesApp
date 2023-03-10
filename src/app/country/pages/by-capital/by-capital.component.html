@@ -1,15 +1,18 @@
-<h2>By Capital</h2>
-<hr>
+<div class="animate__animated animate__fadeIn animate__faster">
+  <h2>By Capital</h2>
+  <hr>
 
-<div class="row">
-  <div class="col">
-    <app-input-country
-      (onInputCountry)="searchByCapital($event)"
-      placeholder="Search Capital..."
-    ></app-input-country>
+  <div class="row">
+    <div class="col">
+      <app-input-country
+        (onInputCountry)="searchByCapital($event)"
+        placeholder="Search Capital..."
+      ></app-input-country>
+    </div>
   </div>
+  <hr>
 </div>
-<hr>
+
 <div class="alert alert-danger" *ngIf="isError">
   Not found with the term {{term}}
 </div>
